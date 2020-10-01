@@ -1,0 +1,16 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wait-on tcp:4001 && nodemon -r esm ./src/index.js"
+  },
+  "dependencies": {
+    "@apollo/gateway": "^0.19.1",
+    "apollo-server": "^2.16.1",
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.4",
+    "wait-on": "^5.2.0"
+  }
+}
